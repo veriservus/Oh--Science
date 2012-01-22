@@ -15,7 +15,8 @@
     {
       "matches": ["http://*/*"],
       "css": ["css/science_content.css"],
-      "js": ["vendor/jquery.js", "lib/science_content.js"]
+      "js": ["vendor/jquery.js", "lib/science_content.js"],
+      "run_at": "document_end"
     }
   ]
 }
