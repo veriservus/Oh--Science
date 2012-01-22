@@ -1,0 +1,21 @@
+{
+  "name": "Oh, Science",
+  "version": "0.1",
+  "description": "Find 'Science'",
+  "background_page": "pages/background.html",
+  "browser_action": {
+    "default_icon": "assets/icon.png",
+    "popup": "pages/popup.html",
+    "default_title": "finder 0.1"
+  },
+  "permissions": [
+    "tabs"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["http://*/*"],
+      "css": ["css/science_content.css"],
+      "js": ["vendor/jquery.js", "lib/science_content.js"]
+    }
+  ]
+}

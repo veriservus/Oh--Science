@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="/css/popup.css" />
+    <script src="/vendor/jquery.js"></script>
+    <script src="/lib/popup.js"></script>
+  </head>
+  <body>
+    <div id="form-wrapper">
+      <form id="options">
+        <h1>Word Finder</h1>
+        <p>Tweak some options and hit 'Find'!</p>
+        <label for="tags">Search tags
+          <span class="small">Searches all tags, if none selected</span>
+        </label>
+        <select id="tags" name="tags" multiple="multiple">
+          <option value="h1">&lt;h1&gt;</option>
+          <option value="h2">&lt;h2&gt;</option>
+          <option value="h3">&lt;h3&gt;</option>
+          <option value="h4">&lt;h4&gt;</option>
+          <option value="h5">&lt;h5&gt;</option>
+          <option value="div">&lt;div&gt;</option>
+          <option value="p">&lt;p&gt;</option>
+          <option value="em">&lt;em&gt;</option>
+          <option value="i">&lt;i&gt;</option>
+          <option value="b">&lt;b&gt;</option>
+        </select>
+        <label for="enableAlert">Enable Alert<span class="small">Annoying pop up</span></label>
+        <input id="enableAlert" name="enableAlert" type="checkbox" />
+        <label for="enableHighlight">Enable Highlight
+          <span class="small">Adds CSS class</span>
+        </label>
+        <input id="enableHighlight" name="enableHighlight" type="checkbox" />
+        <label for="ignoreCase">Ignore Case</label>
+        <input id="ignoreCase" name="ignoreCase" type="checkbox" />
+        <label for="word">Word
+          <span class="small">Search term</span>
+        </label>
+        <input id="word" type="text" name="word" />
+        <button id="options_btn" type="button">Find</button>
+      </form>
+    </div>
+  </body>
+</html>
